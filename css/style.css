@@ -1,0 +1,184 @@
+
+
+/* nuevos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap');
+body{
+ 
+    /* no descomentar, omite la barra de desplazamiento */
+    /* overflow: hidden; */  
+    
+    
+    
+
+}
+:root{
+    --gris: #232324;
+    --azul:#5193b3; 
+    --aqua: #62c4c3;
+    --amarillo: #f8d49b;
+    --hueso:#f8e6cb;
+    --white: rgb(255, 255, 255);
+}
+
+.imagen__index{
+    width: 60%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: 25%;
+}
+.imagen__logo45{
+    margin-top: 0%;
+    width: 35%;
+    margin-left: 30%;    
+}
+.titulo__expo{
+    font-size: 45px;
+    margin-top: 50px;
+    border-radius: 3px;
+    background-color: var(--aqua);
+    text-align: center;    
+}
+.text-block{
+    font-size: 20px;
+    color:var(--gris);
+    text-align:justify;
+    margin-left: 15% ;
+    margin-right: 15%;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+/* boton leer mas */
+.text {
+    
+    /* font-size: large; */
+    font-size: 20px;
+    color:var(--gris);
+    text-align:justify;
+    margin-left: 15% ;
+    margin-right: 15%;
+    font-family: 'Sorts Mill Goudy', serif;
+    
+}
+.moreText {
+    display: none;
+}
+.read-more-btn {
+    padding:8px;
+    box-shadow:var(--d,100vmax) 0 var(--aqua);
+    background:linear-gradient(rgb(69, 71, 54) 0 0) var(--d,100vmax) 0/100% 100% no-repeat;
+    transition:0.2s linear,background-position 0.5s 0.2s linear,box-shadow 0.5s 0.2s linear;
+    position:relative;
+    top:50%; 
+    left:50%;
+
+}
+.read-more-btn:hover{
+    --d:0px;
+    color: var(--amarillo);
+    transition:0.5s linear,color 0.2s 0.4s linear;
+    
+}
+.text.show-more .moreText {
+    display: inline;
+}
+.text.show-more .dots {
+    display: none;
+}
+/* fin boton leer mas */
+
+/* BOTONES SECCION ARTISTAS */
+/* quita el punto de la lista */
+ul li{
+    list-style: none;
+    margin: 0 20%;
+}
+
+ul li a span{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    color: var(--gris);
+    letter-spacing: 4px;
+    transition: 0.5s;
+    font-size: 12px;
+    
+}
+/* vista superior */
+ul li a {
+    text-decoration: none;
+    display:absolute;
+    display:block;
+    width:150px;
+    height:80px;
+    background:var(--amarillo);
+    text-align:left;
+    padding-left: 15px;
+    padding-right: 15px;
+    transform: rotate(-30deg) skew(25deg) translate(0,0);
+    transition:.5s;
+    box-shadow: -20px 20px 10px rgba(4, 0, 255, 0.5);
+}
+  /* lado izquierdo */
+ul li a:before {
+    content: '';
+    position: absolute;
+    top:10px;
+    left:-20px;
+    height:100%;
+    width:20px;
+    background: var(--hueso);
+    transform: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+  /* cara derecha */
+ul li a:after {
+    content: '';
+    position: absolute;
+    bottom:-20px;
+    left:-10px;
+    height:20px;
+    width:100%;
+    background: #b1b1b1;
+    transform: .5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+/* sombra inferior */
+ul li a:hover{
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px var(--gris);
+}
+/* 2do color de letra */
+ul li a:hover span{
+    color: rgb(248, 248, 248);
+}
+/* color cara superior/izquierda/derecha orden */
+ul li:hover:nth-child(1) a{
+    background: var(--azul);
+}
+ul li:hover:nth-child(1) a::before{
+    background: var(--aqua);
+}
+ul li:hover:nth-child(1) a::after{
+    background: #b1b1b1;
+}
+/* footer */
+
+/* carrusel */
+.carousel-inner img {
+    
+    max-height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-inner{
+ height: 450px;
+}
+

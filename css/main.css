@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --grey: #95979b;
+    --blue:#00245b; 
+     
+    --orange: #f79400;
+     
+    --white: #fff;
+    --black: #000;
+}
+
+html,
+body {
+     
+    background: var(--blue);
+    color: rgb(255, 255, 255);
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+}
+
+.loading-screen {
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    background-color: #f79400;
+    width: 0%;
+    height: 100%;
+}
+
+.load-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.title__index  {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Cosi Azure";
+    font-size: 50px;
+    color: var(--white);
+}
+.subtitle__index{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Cosi Azure";
+    font-size: 30px;
+    color: var(--orange);
+}
+.heroImg{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* height: 60vh; */
+    width: 400px;
+    /* imagen */
+    background:  no-repeat 50% 50%;
+    background-size: cover;
+    opacity: 0.8s;
+    transition: 1s ease-in-out;
+
+}
+.heroImg:hover{
+    transition: 1s ease-in-out;
+    opacity: 1;
+
+}
+
+
+.button__index {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button__index a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: var(--orange);
+    border: 1px solid var(--white);
+    padding: 24px 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 10px;
+    transition: 0.3s;
+}
+
+.button__index:hover a {
+    background: var(--white);
+    color: var(--black);
+    transition: 0.3s;
+}
+
+
+/* nuevos */
+
+ 
+
+
+.imagen__index{
+    width: 60%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-left: 25%;
+}
+.imagen__logo45{
+    margin-top: 0%;
+    width: 35%;
+    margin-left: 30%;    
+}
+.titulo__expo{
+    font-size: 45px;
+    margin-top: 50px;
+    border-radius: 3px;
+    background-color: var(--orange);
+    text-align: center; 
+    color: var(--white);   
+}
+.text-block{
+    font-size: 20px;
+    color:var(--white);
+    text-align:justify;
+    margin-left: 15% ;
+    margin-right: 15%;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+/* boton leer mas */
+.text {
+    
+    /* font-size: large; */
+    font-size: 20px;
+    color:var(--white);
+    text-align:justify;
+    margin-left: 15% ;
+    margin-right: 15%;
+    font-family: 'Sorts Mill Goudy', serif;
+    
+}
+.moreText {
+    display: none;
+}
+.read-more-btn {
+    padding:8px;
+    box-shadow:var(--d,100vmax) 0 var(--black);
+    background:linear-gradient(rgb(69, 71, 54) 0 0) var(--d,100vmax) 0/100% 100% no-repeat;
+    transition:0.2s linear,background-position 0.5s 0.2s linear,box-shadow 0.5s 0.2s linear;
+    position:relative;
+    top:50%; 
+    left:50%;
+
+}
+.read-more-btn:hover{
+    --d:0px;
+    color: var(--orange);
+    transition:0.5s linear,color 0.2s 0.4s linear;
+    
+}
+.text.show-more .moreText {
+    display: inline;
+}
+.text.show-more .dots {
+    display: none;
+}
+/* fin boton leer mas */
+
+/* BOTONES SECCION ARTISTAS */
+/* quita el punto de la lista */
+ul li{
+    list-style: none;
+    margin: 0 20%;
+}
+
+ul li a span{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 30px;
+    color: var(--grey);
+    letter-spacing: 4px;
+    transition: 0.5s;
+    font-size: 12px;
+    
+}
+/* vista superior */
+ul li a {
+    text-decoration: none;
+    display:absolute;
+    display:block;
+    width:150px;
+    height:80px;
+    background:var(--amarillo);
+    text-align:left;
+    padding-left: 15px;
+    padding-right: 15px;
+    transform: rotate(-30deg) skew(25deg) translate(0,0);
+    transition:.5s;
+    box-shadow: -20px 20px 10px var(--blue);
+}
+  /* lado izquierdo */
+ul li a:before {
+    content: '';
+    position: absolute;
+    top:10px;
+    left:-20px;
+    height:100%;
+    width:20px;
+    background: var(--grey);
+    transform: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+  /* cara derecha */
+ul li a:after {
+    content: '';
+    position: absolute;
+    bottom:-20px;
+    left:-10px;
+    height:20px;
+    width:100%;
+    background: var(--grey);
+    transform: .5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+/* sombra inferior */
+ul li a:hover{
+    transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
+    box-shadow: -50px 50px 50px var(--gris);
+}
+/* 2do color de letra */
+ul li a:hover span{
+    color: var(--white);
+}
+/* color cara superior/izquierda/derecha orden */
+ul li:hover:nth-child(1) a{
+    background: var(--blue);
+}
+ul li:hover:nth-child(1) a::before{
+    background: var(--orange);
+}
+ul li:hover:nth-child(1) a::after{
+    background: var(--grey);
+}
+
+
+
+.container-1{
+    background-color: var(--blue);
+}
+
+.br{
+    background-color: var(--blue);
+}
+
+/* carrusel si se puede cambiar los colores pana*/
+/* :3 */
+/*se cambio el color del container a blanclo y mas abajo esta todo lo del modal*/
+.container-xl{
+    background-color: var(--white);
+}
+
+.carousel-inner img {
+    
+    max-height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-inner{
+ height: 450px;
+}
+/*intento meco de poner transparecia a los modal*/ 
+.modal-content {
+    background-color: #00245b50 !important;
+}
+
+.modal-footer {
+    background-color: var(--white);
+}
+
+.bi-info-circle-fill{/*color icono CLOSE del modal*/
+    fill: var(--blue);
+}
+.bi-x-circle{/*color icono INFO del modal*/
+    fill: var(--orange);
+}
+.bi-caret-left-fill{/*color icono BACK del carousel*/
+    fill: var(--orange);
+}
+.bi-caret-right-fill{/*color icono NEXT del carousel*/
+    fill: var(--orange);
+}
+
+
+@media(max-width: 706px){
+    body{
+        overflow-x: hidden ;
+    }
+    .title__index  {
+        position: absolute;
+        top: 62%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Cosi Azure";
+        font-size: 20px;
+        color: var(--white);
+    }
+    .subtitle__index{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: "Cosi Azure";
+        font-size: 18px;
+        color: var(--orange);
+    }
+    .heroImg{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        /* height: 60vh; */
+        width: 250px;
+        /* imagen */
+        background:  no-repeat 50% 50%;
+        background-size: cover;
+        opacity: 0.8s;
+        transition: 1s ease-in-out;
+    
+    }
+    .heroImg:hover{
+        transition: 1s ease-in-out;
+        opacity: 1;
+    
+    }
+    
+    
+    .button__index {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .button__index a {
+      
+        
+        padding: 24px 20px;
+        
+        font-size: 6px;
+       
+    }
+    
+    .button__index:hover a {
+        background: var(--white);
+        color: var(--black);
+        transition: 0.3s;
+    }
+
+}
+
+@media (max-width: 462px){
+    .container{
+        margin-right: 20px;
+        margin-left: 40px ;
+    }
+}
