@@ -33,29 +33,7 @@ function pageTransition() {
 function contentAnimation() {
     var tl = gsap.timeline();
     tl.from(".animate-this", { duration: 1, y: 30, opacity: 0, stagger: 0.4, delay: 0.2 });
-    //boton leer mas
-    const readMoreBtn = document.querySelector(".read-more-btn");
-    const text = document.querySelector(".text");
-
-    readMoreBtn.addEventListener("click", (e) => {
-    text.classList.toggle("show-more");
-    if (readMoreBtn.innerText === "Ver más") {
-        readMoreBtn.innerText = "Ver menos";
-    } else {
-        readMoreBtn.innerText = "Ver más";
-    }
-    }); 
-    //
-    const cards = document.querySelectorAll('.card');
-	function toggleOpen(){
-		this.classList.toggle('open');
-		for(i =0 ; i<cards.length; i++){
-			if( cards[i] !== this){
-				cards[i].classList.toggle('close')
-			}
-		}
-	}
-	cards.forEach(card => card.addEventListener('click', toggleOpen));
+    
     
 
 }
