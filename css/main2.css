@@ -310,6 +310,13 @@ ul li:hover:nth-child(1) a::after{
 .bi-caret-right-fill{/*color icono NEXT del carousel*/
     fill: var(--orange);
 }
+.carousel .carousel-indicators button .active,
+.carousel .carousel-indicators button {
+    background-color: var(--orange);
+    width:15px;
+    height: 15px;  
+    border-radius: 100%;
+}
 
 
 @media(max-width: 706px){
