@@ -29,7 +29,7 @@ body {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    background-color: #f79400;
+    background-color: var(--orange);
     width: 0%;
     height: 100%;
 }
@@ -51,25 +51,25 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Helvetica";
-    font-size: 50px;
+    font-size: 45px;
     color: var(--white);
 }
 .subtitle__index{
     position: absolute;
-    top: 80%;
+    top: 82%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Helvetica";
-    font-size: 30px;
+    font-size: 25px;
     color: var(--orange);
 }
 .heroImg{
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%,-50%);
     /* height: 60vh; */
-    width: 400px;
+    width: 280px;
     /* imagen */
     background:  no-repeat 50% 50%;
     background-size: cover;
@@ -96,7 +96,7 @@ body {
     text-decoration: none;
     color: var(--orange);
     border: 1px solid var(--white);
-    padding: 24px 40px;
+    padding: 10px 40px;
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 10px;
@@ -334,11 +334,11 @@ ul li:hover:nth-child(1) a::after{
     }
     .subtitle__index{
         position: absolute;
-        top: 70%;
+        top: 71%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: "Helvetica";
-        font-size: 18px;
+        font-size: 15px;
         color: var(--orange);
     }
     .heroImg{
@@ -372,7 +372,7 @@ ul li:hover:nth-child(1) a::after{
     .button__index a {
       
         
-        padding: 24px 20px;
+        padding: 24px 4px;
         
         font-size: 6px;
        
