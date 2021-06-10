@@ -32,7 +32,41 @@ function pageTransition() {
 
 function contentAnimation() {
     var tl = gsap.timeline();
-    tl.from(".animate-this", { duration: 1, y: 30, opacity: 0, stagger: 0.4, delay: 0.2 });
+    
+    
+    tl.fromTo(".h1animate",{
+        y: "-500%",
+        opacity: 0
+    },{
+        duration: 1,
+        y: "0%",
+        opacity: 1,
+        ease: "power1.out"
+    });
+    tl.fromTo(".h2animate",{
+        y: "100%",
+        opacity: 0
+    },{
+        duration: 1.5,
+        y: "0%",
+        opacity: 1
+    },"-=1");
+    tl.fromTo(".heroImg",{
+        y: "0%",
+        opacity: 0
+    },{
+        duration: 2.5,
+        x: "0%",
+        opacity: 1
+    },"-=1");
+    tl.from(".animate-this", { 
+        duration: 2.5, 
+        y: 30, opacity: 0,
+        stagger: 0.4,
+        delay: 0.2 
+    });
+    
+
     //boton leer mas
     const readMoreBtn = document.querySelector(".read-more-btn");
     const text = document.querySelector(".text");
