@@ -15,13 +15,37 @@
     --black: #000;
 }
 
-html,
+html{
+    background:var(--blue)
+}
 body {
 
-    background: var(--blue);
-    color: rgb(255, 255, 255);
+    /* background: var(--blue); */
+    /* color: rgb(255, 255, 255); */
     overflow-x: hidden;
     /* overflow-y: hidden; */
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    /* background: linear-gradient(-45deg, #EE7752,#e73c7E,#23A6D5,#23D5AB); */
+    background: linear-gradient(-45deg, #f79400,#00245B ,#00245B,#f79400);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+    
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+
+    } 
+    50%{
+        background-position: 100% 50%;
+
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 
 .loading-screen {
