@@ -29,7 +29,7 @@ function pageTransition() {
 }
 barba.hooks.enter(() => {
     window.scrollTo(0, 0);
-  });
+});
 
 
 function contentAnimation() {
