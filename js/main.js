@@ -27,7 +27,9 @@ function pageTransition() {
     });
     tl.set(".loading-screen", { left: "-100%" });
 }
-
+barba.hooks.enter(() => {
+    window.scrollTo(0, 0);
+});
 
 
 function contentAnimation() {
