@@ -299,7 +299,7 @@ ul li:hover:nth-child(1) a::after{
 /* :3 */
 /*se cambio el color del container a blanclo y mas abajo esta todo lo del modal*/
 .container-xl{
-    background-color: var(--white);
+    background-color: #001028;
 }
 
 .carousel-inner img {
@@ -319,11 +319,16 @@ ul li:hover:nth-child(1) a::after{
 }
 
 .modal-footer {
-    background-color: var(--white);
+    background-color: #001028;
+}
+
+.modal-footer .col .collapse .text-start,
+.modal-footer .col .collapse .table{
+    color: var(--white) ;
 }
 
 .bi-info-circle-fill{/*color icono CLOSE del modal*/
-    fill: var(--blue);
+    fill: var(--orange);
 }
 .bi-x-circle{/*color icono INFO del modal*/
     fill: var(--orange);
