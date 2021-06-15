@@ -9,19 +9,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     </head>
-    <style>
-		body, html{
-    
-    
-    /* overflow: hidden; */
-    /* background:var(--blue); */
- 
-    /* text-align: center; */
-}
-
-
-
-	</style>
     
 
     <body data-barba="wrapper" class="body__index">
@@ -31,10 +18,29 @@
 
         <main data-barba="container" data-barba-namespace="home-section">
             <div class="header">
-                <img src="./images/13-alfredo-arcos/Pintura1-min.jpg" alt="..." class="heroImg  ">
+                <header class="container">
+                    <h2 class="container__headline">Desliza </h2>
+                </header>
+                <section class="container hero">
+                    <div class="hero__inner">
+                        <div class="hero__images"><img class="hero__image" src="./images/13-alfredo-arcos/Pintura1-min.jpg"/></div>
+                        <div class="hero__content">
+                        <div class="hero__headline"><span>"Exposición Digital"</span></div>
+                        </div>
+                    </div>
+                </section>
+                <footer class="container">
+                    <h2 class="container__headline">"Neza... una realidad olvidada"</h2>
+                    <h2 class="subtitle__index h2animate">Pasado, presente y futuro.</h2>
+                
+                    <div class="animate-this button__index">
+                        <a href="about.html">Ver Exposición</a>
+                    </div>
+                </footer>
+                <!-- <img src="./images/13-alfredo-arcos/Pintura1-min.jpg" alt="..." class="heroImg  ">
                 <h1 class="title__index h1animate">
                     "Neza...una realidad olvidada" 
-                </h1>
+                </h1> -->
                 <h2 class="subtitle__index h2animate">Pasado, presente y futuro.</h2>
                 
                 <div class="animate-this button__index">
@@ -46,6 +52,10 @@
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/@barba/core"></script>
+
+    <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+    <script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+    
     
     <script src="./js/main.js"></script>
     <!-- <script src="/js/script2.js"></script> -->
