@@ -25,7 +25,7 @@ body {
     overflow-x: hidden;
     /* overflow-y: hidden; */
     width: 100%;
-    height: 100vh;
+    height: auto;
     color: #fff;
     /* background: linear-gradient(-45deg, #EE7752,#e73c7E,#23A6D5,#23D5AB); */
     background: linear-gradient(-45deg, #f79400,#00245B ,#00245B,#f79400);
@@ -68,7 +68,11 @@ body {
     z-index: 10;
     pointer-events: none;
 }
-
+.image__index{
+    width: 75%;
+   height: auto;
+   margin-top: 5px;
+}
 .title__index  {
     position: absolute;
     top: 75%;
@@ -350,6 +354,11 @@ tbody{color: white}
 @media(max-width: 706px){
     body{
         overflow-x: hidden ;
+    }
+    .image__index{
+        width: 100%;
+       height: 100vh;
+        
     }
     .title__index  {
         position: absolute;
