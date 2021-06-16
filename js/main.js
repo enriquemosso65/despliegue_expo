@@ -26,11 +26,12 @@ function pageTransition() {
         delay: 0.3,
     });
     tl.set(".loading-screen", { left: "-100%" });
+    barba.hooks.enter(() => {
+        window.scrollTo(0, 0);
+    });
 }
 
-barba.hooks.enter(() => {
-    window.scrollTo(0, 0);
-});
+ 
 
 
 function contentAnimation() {
@@ -61,6 +62,9 @@ function contentAnimation() {
         stagger: 0.4,
         delay: 0.2 
     });
+    barba.hooks.enter(() => {
+        window.scrollTo(0, 0);
+    });
     
 
 
@@ -77,6 +81,9 @@ function btnmore(){
         readMoreBtn.innerText = "Ver más";
     }
     });
+    barba.hooks.enter(() => {
+        window.scrollTo(0, 0);
+    });
 
 }
 function cards(){
@@ -90,6 +97,9 @@ function cards(){
 		}
 	}
 	cards.forEach(card => card.addEventListener('click', toggleOpen));
+    barba.hooks.enter(() => {
+        window.scrollTo(0, 0);
+    });
 }
 function inicio(){
      
@@ -115,6 +125,9 @@ function inicio(){
         ease: "power2"
     },
     y: "-120%"
+    });
+    barba.hooks.enter(() => {
+        window.scrollTo(0, 0);
     });
 } 
 
