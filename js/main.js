@@ -28,12 +28,9 @@ function pageTransition() {
     tl.set(".loading-screen", { left: "-100%" });
 }
 
-function scrollup(){
-    barba.hooks.enter(() => {
+barba.hooks.enter(() => {
     window.scrollTo(0, 0);
-    });
-}
-
+});
 
 
 function contentAnimation() {
@@ -135,19 +132,16 @@ $(function () {
                     pageTransition();
                     await delay(1000);
                     done();
-                    scrollup()
                 },
                 async once(data) {
                     inicio();
                     contentAnimation();
                     btnmore();
                     cards();
-                    scrollup();
                     
                 },
                 async after(data){
                     inicio();
-                    scrollup();
                 },
                 
 
@@ -156,7 +150,6 @@ $(function () {
                     contentAnimation();
                     btnmore();
                     cards();
-                    scrollup();
                     
                 },
 
