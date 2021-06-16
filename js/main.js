@@ -62,9 +62,6 @@ function contentAnimation() {
     });
     
 
-   
-    
-    
 
 }
 function btnmore(){
@@ -125,6 +122,4 @@ $(function () {
 });
 
 
-
- 
 
