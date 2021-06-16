@@ -92,11 +92,11 @@ body {
 } */
 .subtitle__index{
     position: absolute;
-    top: 93%;
+    top: 92%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Helvetica";
-    font-size: 40px;
+    font-size: 32px;
     color: var(--orange);
     text-align: center;
 }
@@ -394,7 +394,7 @@ tbody{color: white}
     
     .button__index {
         position: absolute;
-        top: 93%;
+        top: 94%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
