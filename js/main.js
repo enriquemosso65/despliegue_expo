@@ -37,10 +37,10 @@ function contentAnimation() {
     
     
     tl.fromTo(".h1animate",{
-        y: "-500%",
+        y: "500%",
         opacity: 0
     },{
-        duration: 1,
+        duration: 2.4,
         y: "0%",
         opacity: 1,
         ease: "power1.out"
@@ -49,27 +49,25 @@ function contentAnimation() {
         y: "100%",
         opacity: 0
     },{
-        duration: 1.5,
-        y: "0%",
-        opacity: 1
-    },"-=1");
-    tl.fromTo(".heroImg",{
-        y: "0%",
-        opacity: 0
-    },{
         duration: 2.5,
-        x: "0%",
+        y: "0%",
         opacity: 1
     },"-=1");
+    
     tl.from(".animate-this", { 
-        duration: 2.5, 
+        duration: 2.6, 
         y: 30, opacity: 0,
         stagger: 0.4,
         delay: 0.2 
     });
     
 
-    //boton leer mas
+   
+    
+    
+
+}
+function btnmore(){
     const readMoreBtn = document.querySelector(".read-more-btn");
     const text = document.querySelector(".text");
 
@@ -80,8 +78,10 @@ function contentAnimation() {
     } else {
         readMoreBtn.innerText = "Ver más";
     }
-    }); 
-    //
+    });
+
+}
+function cards(){
     const cards = document.querySelectorAll('.card');
 	function toggleOpen(){
 		this.classList.toggle('open');
@@ -92,8 +92,6 @@ function contentAnimation() {
 		}
 	}
 	cards.forEach(card => card.addEventListener('click', toggleOpen));
-    
-
 }
 
 $(function () {
@@ -112,10 +110,14 @@ $(function () {
 
                 async enter(data) {
                     contentAnimation();
+                    btnmore();
+                    cards();
                 },
 
                 async once(data) {
                     contentAnimation();
+                    btnmore();
+                    cards();
                 },
             },
         ],
@@ -124,6 +126,5 @@ $(function () {
 
 
 
-// Boton leer mas
-
+ 
 
