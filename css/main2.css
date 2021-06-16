@@ -28,7 +28,7 @@ body {
     height: auto;
     color: #fff;
     /* background: linear-gradient(-45deg, #EE7752,#e73c7E,#23A6D5,#23D5AB); */
-    background: linear-gradient(-45deg, #f79400,#00245B ,#00245B,#f79400);
+    background: linear-gradient(-80deg, #f79400,#00245B ,#00245B,#f79400);
     background-size: 400% 400%;
     position: relative;
     animation: change 10s ease-in-out infinite;
