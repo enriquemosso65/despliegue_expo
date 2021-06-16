@@ -26,12 +26,15 @@ function pageTransition() {
         delay: 0.3,
     });
     tl.set(".loading-screen", { left: "-100%" });
+    
     barba.hooks.enter(() => {
         window.scrollTo(0, 0);
     });
 }
 
- 
+barba.hooks.enter(() => {
+    window.scrollTo(0, 0);
+});
 
 
 function contentAnimation() {
@@ -65,7 +68,6 @@ function contentAnimation() {
     barba.hooks.enter(() => {
         window.scrollTo(0, 0);
     });
-    
 
 
 }

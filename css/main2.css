@@ -16,7 +16,7 @@
 }
 
 html{
-    background:var(--blue)
+    background:var(--blue);
 }
 body {
 
@@ -27,13 +27,15 @@ body {
     width: 100%;
     height: auto;
     color: #fff;
-    /* background: linear-gradient(-45deg, #EE7752,#e73c7E,#23A6D5,#23D5AB); */
-    background: linear-gradient(-80deg, #f79400,#00245B ,#00245B,#f79400);
+    
+    background: linear-gradient(-45deg, #f79400 ,#00245B,#f79400);
     background-size: 400% 400%;
     position: relative;
     animation: change 10s ease-in-out infinite;
     
 }
+ 
+ 
 @keyframes change{
     0%{
         background-position: 0 50%;
@@ -315,6 +317,7 @@ ul li:hover:nth-child(1) a::after{
 /*se cambio el color del container a blanclo y mas abajo esta todo lo del modal*/
 .container-xl{
     background-color: #001028;
+    
 }
 
 .carousel-inner img {
@@ -360,7 +363,7 @@ tbody{color: white}
     height: 15px;  
     border-radius: 100%;
 }
-
+ 
 
 @media(max-width: 706px){
     body{
