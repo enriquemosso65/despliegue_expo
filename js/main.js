@@ -131,10 +131,29 @@ function inicio(){
     barba.hooks.enter(() => {
         window.scrollTo(0, 0);
     });
-
+    gsap.from('.title__index',{
+        scrollTrigger: '.title__index',
+        duration: 3,
+        opacity: 0,
+        y: 100,
+        delay: 0.5,
+        stagger:1
+        
+    
+    });
+    gsap.from('.subtitle__index',{
+        scrollTrigger: '.subtitle__index',
+        duration: 3.2,
+        opacity: 0,
+        y: 100,
+        delay: 0.5,
+        stagger:1
+        
+    
+    });
     gsap.from('.button__index',{
         scrollTrigger: '.button__index',
-        duration: 10,
+        duration: 3.4,
         opacity: 0,
         y: 100,
         delay: 0.5,
