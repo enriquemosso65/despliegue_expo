@@ -133,7 +133,7 @@ function inicio(){
     });
     gsap.from('.title__index',{
         scrollTrigger: '.title__index',
-        duration: 3,
+        duration: 3.5,
         opacity: 0,
         y: 100,
         delay: 0.5,
@@ -143,7 +143,7 @@ function inicio(){
     });
     gsap.from('.subtitle__index',{
         scrollTrigger: '.subtitle__index',
-        duration: 3.2,
+        duration: 3.7,
         opacity: 0,
         y: 100,
         delay: 0.5,
@@ -153,7 +153,7 @@ function inicio(){
     });
     gsap.from('.button__index',{
         scrollTrigger: '.button__index',
-        duration: 3.4,
+        duration: 3.9,
         opacity: 0,
         y: 100,
         delay: 0.5,
