@@ -344,10 +344,33 @@ tbody{color: white}
     
 }
 
-.bi-info-circle-fill{/*color icono CLOSE del modal*/
+.bi-info-circle-fill{/*color icono info del modal*/
     fill: var(--orange);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
 }
-.bi-x-circle{/*color icono INFO del modal*/
+  
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 #F2A90040;
+      box-shadow: 0 0 0 0 #F2A90040;
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px #F2A90000;
+        box-shadow: 0 0 0 10px #F2A90000;
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 #F2A90000;
+        box-shadow: 0 0 0 0 #F2A90000;
+    }
+  }
+
+
+
+
+
+
+.bi-x-circle{/*color icono INFO del close*/
     fill: var(--orange);
 }
 .bi-caret-left-fill{/*color icono BACK del carousel*/
