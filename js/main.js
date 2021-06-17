@@ -59,12 +59,7 @@ function contentAnimation() {
         opacity: 1
     },"-=1");
     
-    tl.from(".animate-this", { 
-        duration: 2.6, 
-        y: 30, opacity: 0,
-        stagger: 0.4,
-        delay: 0.2 
-    });
+    
     barba.hooks.enter(() => {
         window.scrollTo(0, 0);
     });
@@ -86,6 +81,8 @@ function btnmore(){
     barba.hooks.enter(() => {
         window.scrollTo(0, 0);
     });
+
+    
 
 }
 function cards(){
@@ -128,8 +125,22 @@ function inicio(){
     },
     y: "-120%"
     });
+
+   
+
     barba.hooks.enter(() => {
         window.scrollTo(0, 0);
+    });
+
+    gsap.from('.button__index',{
+        scrollTrigger: '.button__index',
+        duration: 10,
+        opacity: 0,
+        y: 100,
+        delay: 0.5,
+        stagger:1
+        
+    
     });
 } 
 
