@@ -81,20 +81,20 @@ body {
 .image__index:hover{
     transform: scale(1.1);
     -webkit-filter: blur(1px);
-}
+} */
 .title__index  {
     position: absolute;
-    top: 70%;
+    top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Helvetica";
-    font-size: 60px;
+    font-size: 70px;
     color: var(--white);
-    text-align: left;
-} */
+    text-align: center;
+}
 .subtitle__index{
     position: absolute;
-    top: 92%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Helvetica";
@@ -125,7 +125,7 @@ body {
 
 .button__index {
     position: absolute;
-    top: 75%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -374,15 +374,15 @@ tbody{color: white}
        height: 100vh;
         
     }
-    /* .title__index  {
+    .title__index  {
         position: absolute;
-        top: 62%;
+        top: 82%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: "Helvetica";
         font-size: 20px;
         color: var(--white);
-    } */
+    }
     .subtitle__index{
         position: absolute;
         top: 91%;
