@@ -9,7 +9,9 @@
     --grey: #95979b;
     --blue:#00245b; 
 
-    --orange: #F2A900;
+    --orange: #f2a900b0;
+    --orange2: #f2a900;
+     
 
     --white: #fff;
     --black: #000;
@@ -55,7 +57,7 @@ body {
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    background-color: var(--orange);
+    background-color: var(--orange2);
     width: 0%;
     height: 100%;
 }
