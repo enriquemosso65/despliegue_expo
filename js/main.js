@@ -86,7 +86,7 @@ function btnmore(){
 
 }
 function cards(){
-    const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll(".card__cinco, .card" );
 	function toggleOpen(){
 		this.classList.toggle('open');
 		for(i =0 ; i<cards.length; i++){

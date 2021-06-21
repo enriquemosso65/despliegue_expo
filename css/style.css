@@ -465,39 +465,39 @@ tbody{color: white}
     }
 }
 	
-*{
+/* *{
     margin:0;
     box-sizing: border-box;
     padding: 0;
-    /* -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; */
-}
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
 
 
  
 
 
 
-.noselect{
+/* .noselect{
     -webkit-user-select: none;
     -moz-user-select:none;
     -ms-user-select:none;
     user-select: none;
-}
+} */
 
-@-webkit-keyframes beat{
+/* @-webkit-keyframes beat{
     to {
         -webkit-transform: scale(1.4);
         transform: scale(1.4);
     }
-}
+} */
 
-@keyframes beat{
+/* @keyframes beat{
     to{
         -webkit-transform: scale(1.4);
         transform: scale(1.4);
     }
-}
+} */
 
 
 .artboard .cards{
@@ -520,8 +520,20 @@ tbody{color: white}
     background-color: rgba(0, 0, 0, 0.548);
     
 }
-
-.artboard .cards .card a {
+.artboard .cards .card__cinco{
+    min-width: calc(20%);
+    min-height: 100%;
+    text-align: center;
+    background-size: content;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    transition: 500ms cubic-bezier(1, 0.02,0,0.98);
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.548);
+    
+}
+/* .artboard .cards .card a {
     font-family: Arial, Helvetica;
     font-size: 60px;
     text-transform: capitalize;
@@ -530,7 +542,7 @@ tbody{color: white}
     position: relative;
     top: 50%;
     transition: 250ms cubic-bezier(1, 0.02, 0, 0.98);
-}
+} */
 
 .artboard .p1 {
 background: url("../images/11-duany/Pintura\ 37-gimp1.jpg");
@@ -544,6 +556,21 @@ background: url("../images/11-duany/Pintura\ 39-gimp.jpg");
 .artboard .p4 {
 background: url("../images/11-duany/Pintura\ 40-gimp.jpg");
 }
+.artboard .pintura2 {
+    background: url("../images/11-duany/Pintura\ 37-gimp1.jpg");
+    }
+    .artboard .pintura5 {
+    background: url("../images/11-duany/Pintura\ 38-gimp.jpg");
+    }
+    .artboard .pintura3 {
+    background: url("../images/11-duany/Pintura\ 39-gimp.jpg");
+    }
+    .artboard .pintura4 {
+    background: url("../images/11-duany/Pintura\ 40-gimp.jpg");
+    }
+    .artboard .pintura6 {
+        background: url("../images/11-duany/Pintura\ 38-gimp.jpg");
+        }
 
 .open{
 min-width: 100% !important;
@@ -559,6 +586,8 @@ min-width: 0% !important;
 .close a{
 top: -50% !important;
 }
+
+/* index */
 .container__des {
     display: flex;
     align-items: center;
