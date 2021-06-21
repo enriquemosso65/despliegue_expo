@@ -354,8 +354,8 @@ tbody{color: white}
   
   @keyframes pulse {
     0% {
-      -moz-box-shadow: 0 0 0 0 #F2A90040;
-      box-shadow: 0 0 0 0 #F2A90040;
+      -moz-box-shadow: 0 0 0 0 #F2A90070;
+      box-shadow: 0 0 0 0 #F2A90070;
     }
     70% {
         -moz-box-shadow: 0 0 0 10px #F2A90000;
