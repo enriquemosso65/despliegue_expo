@@ -441,6 +441,20 @@ tbody{color: white}
         color: var(--black);
         transition: 0.3s;
     }
+    .imagen__index{
+        width: 60%;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 20%;
+    }
+    .text-block{
+        font-size: 20px;
+        color:var(--white);
+        text-align:justify;
+        margin-left: 15% ;
+        margin-right: 15%;
+        font-family: Arial, Helvetica, ;
+    }
 
 }
 
