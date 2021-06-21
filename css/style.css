@@ -160,9 +160,9 @@ body {
 
 .imagen__index{
     width: 60%;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-bottom: 50px;
-    margin-left: 25%;
+    margin-left: 30%;
 }
 .imagen__logo45{
     margin-top: 0%;
@@ -182,7 +182,7 @@ body {
     color:var(--white);
     text-align:justify;
     margin-left: 15% ;
-    margin-right: 15%;
+    margin-right: 30%;
     font-family: Arial, Helvetica, ;
 }
 /* boton leer mas */
