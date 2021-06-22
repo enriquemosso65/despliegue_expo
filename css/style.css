@@ -30,10 +30,10 @@ body {
     height: auto;
     color: #fff;
     
-    background: linear-gradient(-45deg, #f79400 ,#00245B,#f79400);
+    background: linear-gradient(90deg ,#00245B,#f79400);
     background-size: 400% 400%;
     position: relative;
-    animation: change 10s ease-in-out infinite;
+    /* animation: change 10s ease-in-out infinite; */
     
 }
  
@@ -90,17 +90,17 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Helvetica";
-    font-size: 70px;
+    font-size: 45px;
     color: var(--white);
     text-align: center;
 }
 .subtitle__index{
     position: absolute;
-    top: 85%;
+    top: 84%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Helvetica";
-    font-size: 32px;
+    font-size: 30px;
     color: var(--orange);
     text-align: center;
 }
@@ -177,12 +177,21 @@ body {
     text-align: center; 
     color: var(--white);   
 }
-.text-block{
+.text-block-inicio{
     font-size: 20px;
     color:var(--white);
     text-align:justify;
     margin-left: 15% ;
     margin-right: 30%;
+    font-family: Arial, Helvetica, ;
+}
+.text-block{
+    font-size: 20px;
+    color:var(--white);
+    text-align:justify;
+    margin-left: 10%;
+    margin-right: 10%;
+     
     font-family: Arial, Helvetica, ;
 }
 /* boton leer mas */
@@ -447,7 +456,7 @@ tbody{color: white}
         margin-bottom: 50px;
         margin-left: 20%;
     }
-    .text-block{
+    .text-block-inicio{
         font-size: 20px;
         color:var(--white);
         text-align:justify;
