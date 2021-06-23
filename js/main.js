@@ -9,6 +9,7 @@ function delay(n) {
     });
 }
 
+
 function pageTransition() {
     var tl = gsap.timeline();
     tl.to(".loading-screen", {
@@ -125,6 +126,12 @@ function inicio(){
     },
     y: "-120%"
     });
+    window.onload = function(){
+        
+        $('#onload').fadeOut();
+        $('body').removeClass('hidden');
+        
+    }
 
    
 
