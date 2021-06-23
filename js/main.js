@@ -126,12 +126,14 @@ function inicio(){
     },
     y: "-120%"
     });
-    window.onload = function(){
-        
-        $('#onload').fadeOut();
-        $('body').removeClass('hidden');
-        
-    }
+     
+    const tl = gsap.timeline();
+    tl.to(".animation",{
+        y:"-100%",
+        duration:1,
+        delay:1,
+        ease:"Expo.easeInOut"
+    })
 
    
 
