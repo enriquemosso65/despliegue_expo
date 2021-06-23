@@ -61,7 +61,7 @@ gsap.from('.animate-artista2',{
 });
 gsap.from('.animate-artista3',{
     scrollTrigger: '.animate-artista3',
-    duration: 1.7,
+    duration:5,
     opacity: 0,
     x: -200,
     delay: 0.5,

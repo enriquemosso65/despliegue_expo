@@ -60,11 +60,12 @@ function contentAnimation() {
         opacity: 1
     },"-=1");
     
-    
     barba.hooks.enter(() => {
         window.scrollTo(0, 0);
     });
 
+    
+    
 
 }
 function btnmore(){
@@ -86,21 +87,7 @@ function btnmore(){
     
 
 }
-function cards(){
-    const cards = document.querySelectorAll(".card__cinco, .card" );
-	function toggleOpen(){
-		this.classList.toggle('open');
-		for(i =0 ; i<cards.length; i++){
-			if( cards[i] !== this){
-				cards[i].classList.toggle('close')
-			}
-		}
-	}
-	cards.forEach(card => card.addEventListener('click', toggleOpen));
-    barba.hooks.enter(() => {
-        window.scrollTo(0, 0);
-    });
-}
+
 function inicio(){
      
 
@@ -126,7 +113,7 @@ function inicio(){
     },
     y: "-120%"
     });
-     
+
     const tl = gsap.timeline();
     tl.to(".animation",{
         y:"-100%",
@@ -134,8 +121,6 @@ function inicio(){
         delay:1,
         ease:"Expo.easeInOut"
     })
-
-   
 
     barba.hooks.enter(() => {
         window.scrollTo(0, 0);
@@ -170,8 +155,84 @@ function inicio(){
         
     
     });
+    gsap.from('.animate-hero',{
+        scrollTrigger: '.animate-hero',
+        duration: 1,
+        opacity: 1,
+        x: -150,
+        stagger:0.12
+    
+    });
+    gsap.from('.animate-image',{
+        scrollTrigger: '.animate-image',
+        duration: 1.7,
+        opacity: 0,
+        x: -200,
+        delay: 0.5,
+        stagger:0.3
+        
+    
+    });
+    gsap.from('.animate-text',{
+        scrollTrigger: '.animate-text',
+        duration: 1.7,
+        opacity: 0,
+        x: -200,
+        delay: 0.5,
+        stagger:0.3
+    });
+    gsap.from('.animate-text2',{
+        scrollTrigger: '.animate-text2',
+        duration: 0.3,
+        opacity: 0,
+        y: 200,
+        delay: 0.5,
+        stagger:0.3
+    });
+    gsap.from('.animate-text3',{
+        scrollTrigger: '.animate-text3',
+        duration: 1.7,
+        opacity: 0,
+        x: -200,
+        delay: 0.5,
+        stagger:0.3
+    });
+    gsap.from('.animate-artista1',{
+        scrollTrigger: '.animate-artista1',
+        duration: 1.7,
+        opacity: 0,
+        x: -200,
+        delay: 0.5,
+        stagger:0.3
+    });
+    gsap.from('.animate-artista2',{
+        scrollTrigger: '.animate-artista2',
+        duration: 5,
+        opacity: 0,
+        x: -200,
+        delay: 0.5,
+        stagger:0.3
+    });
+    gsap.from('.animate-artista3',{
+        scrollTrigger: '.animate-artista3',
+        duration: 1.7,
+        opacity: 0,
+        x: -200,
+        delay: 0.5,
+        stagger:0.3
+    });
+    
+    
+    gsap.from('.animate-btn-art',{
+        scrollTrigger: '.animate-btn-art',
+        duration: 1.7,
+        opacity: 0,
+        x: 200,
+        delay: 0.5,
+        stagger:0.3
+    });
 } 
-
+ 
     
 
 $(function () {
@@ -191,8 +252,6 @@ $(function () {
                     inicio();
                     contentAnimation();
                     btnmore();
-                    cards();
-                    
                 },
                 async after(data){
                     inicio();
@@ -203,8 +262,7 @@ $(function () {
                     
                     contentAnimation();
                     btnmore();
-                    cards();
-                    
+
                 },
 
                 
