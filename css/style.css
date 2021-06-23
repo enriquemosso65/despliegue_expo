@@ -101,7 +101,7 @@ body {
     transform: translate(-50%, -50%);
     font-family: "Helvetica";
     font-size: 30px;
-    color: var(--white);
+    color: var(--orange2);
     text-align: center;
 }
 /* .heroImg{
@@ -136,7 +136,7 @@ body {
     font-family: Arial, Helvetica;
     text-decoration: none;
     color: var(--white);
-    border: 3px solid var(--white);
+    border: 3px solid white;
     padding: 25px 40px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -146,10 +146,11 @@ body {
 
 .button__index:hover a {
     background: var(--orange);
-    color: var(--black);
-    border: solid var(--white);
+    color: var(--blue);
+    border:   var(--orange2);
     font-size: 13px;
     box-shadow: 1px 1px 25px 10px var(--orange);
+    font-weight: bold;
     
 }
 
@@ -455,8 +456,8 @@ tbody{color: white}
     }
     
     .button__index:hover a {
-        background: var(--white);
-        color: var(--black);
+        background: var(--orange2);
+        color: var(--blue);
         font-size: 8px;
         box-shadow: 1px 1px 10px 10px var(--orange);
     }
@@ -633,4 +634,12 @@ tbody{color: white}
 .active .hero__headline span {
     transform: translateY(0);
     transition-delay: var(--delay);
+}
+.boton__lostart{
+    color: var(--blue);
+    text-decoration: none;
+}
+.boton__lostart:hover{
+    color: var(--blue);
+    text-decoration: none;
 }
