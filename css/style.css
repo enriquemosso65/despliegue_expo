@@ -274,21 +274,29 @@ body {
     
 }
 .read-more-btn {
-    padding:8px;
-    box-shadow:var(--d,100vmax) 0 var(--white);
-    background:linear-gradient(rgb(69, 71, 54) 0 0) var(--d,100vmax) 0/100% 100% no-repeat;
-    transition:0.2s linear,background-position 0.5s 0.2s linear,box-shadow 0.5s 0.2s linear;
-    position:relative;
+     
+    padding:10px;
+   background:
+    linear-gradient(-90deg,currentColor 50%,#0000 0) 0 0,
+    linear-gradient(  0deg,currentColor 50%,#0000 0) 0 0,
+    linear-gradient(currentColor 0 0) 100% 100%,
+    linear-gradient(currentColor 0 0) 100% 100%;
+  background-size: 200% 3px,3px 200%,3px 0%,0% 3px; 
+  background-repeat:no-repeat;
+  transition: .3s,background-size .3s .3s;
+  border: 0px;
+  position:relative;
     top:50%; 
     left:50%;
-    background-color: var(--white);
+    font-size: 25px;
+    color: var(--orange2);
 
 }
 .read-more-btn:hover{
-    --d:0px;
-    color: var(--orange);
-    transition:0.5s linear,color 0.2s 0.4s linear;
-    
+   
+   background-position: 100% 0,0 100%,100% 0,0 100%;
+  background-size: 200% 3px,3px 200%,3px 100%,100% 3px; 
+  transition: .3s,background-position .3s .3s;
 }
 .text.show-more .moreText {
     display: inline;
@@ -511,7 +519,8 @@ tbody{color: white}
     .button__index:hover a {
         background: var(--white);
         color: var(--black);
-        transition: 0.3s;
+        font-size: 8px;
+        box-shadow: 1px 1px 10px 10px var(--orange);
     }
     .imagen__index{
         width: 60%;
@@ -526,6 +535,11 @@ tbody{color: white}
         margin-left: 15% ;
         margin-right: 15%;
         font-family: Arial, Helvetica, ;
+    }
+    .read-more-btn{
+        position:relative;
+        top:0%; 
+        left:40%;
     }
 
 }
