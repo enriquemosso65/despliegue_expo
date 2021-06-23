@@ -197,7 +197,7 @@ body {
 .button__index a {
     font-family: Arial, Helvetica;
     text-decoration: none;
-    color: var(--orange);
+    color: var(--white);
     border: 3px solid var(--white);
     padding: 25px 40px;
     text-transform: uppercase;
@@ -207,11 +207,12 @@ body {
 }
 
 .button__index:hover a {
-    background: var(--white);
+    background: var(--orange);
     color: var(--black);
-    /* transition: 0.3s; */
-    /* transform: scale(1.1); */
-    /* -webkit-filter: blur(1px); */
+    border: solid var(--white);
+    font-size: 13px;
+    box-shadow: 1px 1px 25px 10px var(--orange);
+    
 }
 
 
