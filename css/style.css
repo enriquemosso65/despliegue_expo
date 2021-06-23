@@ -37,20 +37,7 @@ body {
     
 }
 
- 
-@keyframes change{
-    0%{
-        background-position: 0 50%;
 
-    } 
-    50%{
-        background-position: 100% 50%;
-
-    }
-    100%{
-        background-position: 0 50%;
-    }
-}
 .lds-ring {
   display: inline-block;
   position: relative;
@@ -98,6 +85,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.logo{
+     
+    
+    width: 50px;
+
+  
+     
+
 }
 .dissapear{
     animation: vanish 1s forwards;
