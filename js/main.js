@@ -1,5 +1,3 @@
-
-
 function delay(n) {
     n = n || 2000;
     return new Promise((done) => {
@@ -8,8 +6,6 @@ function delay(n) {
         }, n);
     });
 }
-
-
 function pageTransition() {
     var tl = gsap.timeline();
     tl.to(".loading-screen", {
@@ -18,7 +14,6 @@ function pageTransition() {
         left: "0%",
         ease: "Expo.easeInOut",
     });
-
     tl.to(".loading-screen", {
         duration: 1,
         width: "100%",
@@ -32,16 +27,11 @@ function pageTransition() {
         window.scrollTo(0, 0);
     });
 }
-
 barba.hooks.enter(() => {
     window.scrollTo(0, 0);
 });
-
-
 function contentAnimation() {
     var tl = gsap.timeline();
-    
-    
     tl.fromTo(".h1animate",{
         y: "500%",
         opacity: 0
@@ -59,19 +49,13 @@ function contentAnimation() {
         y: "0%",
         opacity: 1
     },"-=1");
-    
     barba.hooks.enter(() => {
         window.scrollTo(0, 0);
-    });
-
-    
-    
-
+    });    
 }
 function btnmore(){
     const readMoreBtn = document.querySelector(".read-more-btn");
     const text = document.querySelector(".text");
-
     readMoreBtn.addEventListener("click", (e) => {
     text.classList.toggle("show-more");
     if (readMoreBtn.innerText === "Ver más") {
@@ -83,14 +67,8 @@ function btnmore(){
     barba.hooks.enter(() => {
         window.scrollTo(0, 0);
     });
-
-    
-
 }
-
 function inicio(){
-     
-
     gsap.to(".hero", {
     scrollTrigger: {
         trigger: ".hero",
@@ -102,7 +80,6 @@ function inicio(){
         ease: "power2"
     }
     });
-
     gsap.to(".hero__image", {
     scrollTrigger: {
         trigger: ".hero",
@@ -113,7 +90,6 @@ function inicio(){
     },
     y: "-120%"
     });
-
     const tl = gsap.timeline();
     tl.to(".animation",{
         y:"-100%",
@@ -121,7 +97,6 @@ function inicio(){
         delay:1,
         ease:"Expo.easeInOut"
     })
-
     barba.hooks.enter(() => {
         window.scrollTo(0, 0);
     });
@@ -132,8 +107,6 @@ function inicio(){
         y: 100,
         delay: 0.5,
         stagger:1
-        
-    
     });
     gsap.from('.subtitle__index',{
         scrollTrigger: '.subtitle__index',
@@ -142,8 +115,6 @@ function inicio(){
         y: 100,
         delay: 0.5,
         stagger:1
-        
-    
     });
     gsap.from('.button__index',{
         scrollTrigger: '.button__index',
@@ -152,8 +123,6 @@ function inicio(){
         y: 100,
         delay: 0.5,
         stagger:1
-        
-    
     });
     gsap.from('.animate-hero',{
         scrollTrigger: '.animate-hero',
@@ -161,21 +130,18 @@ function inicio(){
         opacity: 1,
         x: -150,
         stagger:0.12
-    
     });
-    gsap.from('.animate-image',{
-        scrollTrigger: '.animate-image',
+    gsap.from('.animate-text',{
+        scrollTrigger: '.animate-text',
         duration: 1.7,
         opacity: 0,
         x: -200,
         delay: 0.5,
         stagger:0.3
-        
-    
     });
-    gsap.from('.animate-text',{
-        scrollTrigger: '.animate-text',
-        duration: 1.7,
+    gsap.from('.animate-image',{
+        scrollTrigger: '.animate-image',
+        duration: 2,
         opacity: 0,
         x: -200,
         delay: 0.5,
@@ -199,7 +165,7 @@ function inicio(){
     });
     gsap.from('.animate-artista1',{
         scrollTrigger: '.animate-artista1',
-        duration: 1.7,
+        duration: 3.1,
         opacity: 0,
         x: -200,
         delay: 0.5,
@@ -207,7 +173,7 @@ function inicio(){
     });
     gsap.from('.animate-artista2',{
         scrollTrigger: '.animate-artista2',
-        duration: 5,
+        duration: 3.2,
         opacity: 0,
         x: -200,
         delay: 0.5,
@@ -215,14 +181,12 @@ function inicio(){
     });
     gsap.from('.animate-artista3',{
         scrollTrigger: '.animate-artista3',
-        duration: 1.7,
+        duration: 3.3,
         opacity: 0,
         x: -200,
         delay: 0.5,
         stagger:0.3
     });
-    
-    
     gsap.from('.animate-btn-art',{
         scrollTrigger: '.animate-btn-art',
         duration: 1.7,
@@ -232,18 +196,13 @@ function inicio(){
         stagger:0.3
     });
 } 
- 
-    
-
 $(function () {
     barba.init({
         sync: true,
-
         transitions: [
             {
                 async leave(data) {
                     const done = this.async();
-
                     pageTransition();
                     await delay(1000);
                     done();
@@ -256,18 +215,10 @@ $(function () {
                 async after(data){
                     inicio();
                 },
-                
-
-                async enter(data) {
-                    
+                async enter(data) { 
                     contentAnimation();
                     btnmore();
-
                 },
-
-                
-
-                
             },
         ],
     });
