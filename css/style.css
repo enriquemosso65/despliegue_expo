@@ -420,11 +420,11 @@ tbody{color: white}
     }
     .title__index  {
         position: absolute;
-        top: 82%;
+        top: 89%;
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: "Helvetica";
-        font-size: 20px;
+        font-size: 15px;
         color: var(--white);
     }
     .subtitle__index{
@@ -433,8 +433,8 @@ tbody{color: white}
         left: 50%;
         transform: translate(-50%, -50%);
         font-family: "Helvetica";
-        font-size: 15px;
-        color: var(--white);
+        font-size: 10px;
+        color: var(--orange2);
     }
     
     
@@ -507,7 +507,7 @@ tbody{color: white}
     height: 100%;
     background-position: center;
     background-size: cover;
-    background-repeat: none;
+    background-repeat: none !important; 
     transition: flex 2s ease;
     border-style: solid  ;
     border-color: var(--white);
