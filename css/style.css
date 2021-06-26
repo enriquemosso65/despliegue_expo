@@ -103,21 +103,21 @@ body {
 .container .box .title .block {
     width: 0%;
     height: inherit;
-    background: #ffb510;
+    background: var(--orange2);
     position: absolute;
     animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 3.5s;
     display: flex;
 }
 .container .box .title h1 {
-    font-family: Helvetica;
+    font-family: Arial;
     color: #fff;
     font-size: 20;
     animation: mainFadeIn 2s forwards;
-    animation-delay: 1.6s;
+    animation-delay: 4.6s;
     opacity: 0;
     display: flex;
-    align-items: baseline;
-    position: relative;
+     
 }
 .container .box .role {
     width: 100%;
@@ -125,29 +125,35 @@ body {
     display: flex;
     align-items: center;
     height: 30px;
-    margin-top: -10px;
+    margin-top: 50px;
 }
 .container .box .role .block {
     width: 0%;
-    height: inherit;
-    background: #ffffff;
+    height:80px;
+    background: var(--blue);
     position: absolute;
     animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-    animation-delay: 2s;
+    animation-delay: 5s;
     display: flex;
 }
 .container .box .role p {
     animation: secFadeIn 2s forwards;
-    animation-delay: 3.2s;
+    animation-delay: 5.6s;
     opacity: 0;
-    font-weight: 400;
-    font-family: 'Arial';
-    color: #fff;
-    font-size: 20px;
+    font-weight: 700;
+    font-family: Helvetica;
+    color: var(--white);
+    font-size:30px;
     line-height: 1.5;
-    text-transform: uppercase;
-    letter-spacing: 5px;
+     
+    letter-spacing: 3px;
 }
+.sub{
+    color: #f2a900; 
+    font-size: 29px;
+    margin-left: 0;
+}
+
 @keyframes mainBlock {
     0% {
         width: 0%;
@@ -167,7 +173,7 @@ body {
         opacity: 0;
     }
     100% {
-        opacity: 1;
+        opacity: .7;
     }
 }
 @keyframes secFadeIn {
@@ -175,12 +181,12 @@ body {
         opacity: 0;
     }
     100% {
-        opacity: 0.5;
+        opacity: 1;
     }
 }
 
 
-
+/* 
 
 .title__index  {
     position: absolute;
@@ -191,16 +197,16 @@ body {
     font-size: 45px;
     color: var(--white);
     text-align: center;
-}
+} */
 .subtitle__index{
-    position: absolute;
+    /* position: absolute;
     top: 84%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Helvetica";
     font-size: 30px;
     color: var(--orange2);
-    text-align: center;
+    text-align: center; */
 }
 /* .heroImg{
     position: absolute;
@@ -225,8 +231,8 @@ body {
 
 .button__index {
     position: absolute;
-    top: 90%;
-    left: 50%;
+    top: 85%;
+    left: 75%;
     transform: translate(-50%, -50%);
 }
 
@@ -516,23 +522,72 @@ tbody{color: white}
        height: 100vh;
         
     }
-    .title__index  {
-        position: absolute;
-        top: 89%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "Helvetica";
-        font-size: 15px;
-        color: var(--white);
+    .container .box {
+        width: 250px;
+        height: 300px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
-    .subtitle__index{
+    .container .box .title {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+    .container .box .title .block {
+        width: 0%;
+        height: inherit;
+        background: var(--orange2);
         position: absolute;
-        top: 91%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "Helvetica";
-        font-size: 10px;
-        color: var(--orange2);
+        animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+        animation-delay: 3.5s;
+        display: flex;
+    }
+    .container .box .title h1 {
+        font-family: Arial;
+        color: #fff;
+        font-size: 12px;
+        animation: mainFadeIn 2s forwards;
+        animation-delay: 4.6s;
+        opacity: 0;
+        text-align: center;
+         
+    }
+    .container .box .role {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 30px;
+        margin-top: 50px;
+    }
+    .container .box .role .block {
+        width: 0%;
+        height:80px;
+        background: var(--blue);
+        position: absolute;
+        animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+        animation-delay: 5s;
+        display: flex;
+    }
+    .container .box .role p {
+        animation: secFadeIn 2s forwards;
+        animation-delay: 5.6s;
+        opacity: 0;
+        font-weight: 700;
+        font-family: Helvetica;
+        color: var(--white);
+        font-size:12px;
+        line-height: 1.5;
+         
+        letter-spacing: 3px;
+    }
+    .sub{
+        font-size: 8px;
+        
     }
     
     

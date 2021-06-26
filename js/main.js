@@ -78,28 +78,14 @@ function inicio(){
     barba.hooks.enter(() => {
         window.scrollTo(0, 0);
     });
-    gsap.from('.title__index',{
-        scrollTrigger: '.title__index',
-        duration: 3.5,
-        opacity: 0,
-        y: 100,
-        delay: 0.5,
-        stagger:1
-    });
-    gsap.from('.subtitle__index',{
-        scrollTrigger: '.subtitle__index',
-        duration: 3.7,
-        opacity: 0,
-        y: 100,
-        delay: 0.5,
-        stagger:1
-    });
+    
+     
     gsap.from('.button__index',{
         scrollTrigger: '.button__index',
         duration: 3.9,
         opacity: 0,
         y: 100,
-        delay: 0.5,
+        delay: 2.7,
         stagger:1
     });
 } 
