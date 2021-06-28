@@ -386,7 +386,9 @@ tbody{color: white}
     }
   }
 
-
+.carousel .carousel-inner .carousel-item .row .modal .modal-dialog .modal-content .modal-footer .col .collapse p.text{
+    text-align:justify;
+}
 
 
 
