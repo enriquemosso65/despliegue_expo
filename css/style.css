@@ -84,6 +84,110 @@ body {
     transform: scale(1.1);
     -webkit-filter: blur(1px);
 } */
+
+.container .box {
+    width: 1000px;
+    height: 550px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .box .title {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+.container .box .title .block {
+    width: 0%;
+    height: inherit;
+    background: var(--orange2);
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 3.5s;
+    display: flex;
+}
+.container .box .title h1 {
+    font-family: Arial;
+    color: #fff;
+    font-size: 20;
+    animation: mainFadeIn 2s forwards;
+    animation-delay: 4.6s;
+    opacity: 0;
+    display: flex;
+     
+}
+.container .box .role {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    margin-top: 50px;
+}
+.container .box .role .block {
+    width: 0%;
+    height:80px;
+    background: var(--blue);
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    animation-delay: 5s;
+    display: flex;
+}
+.container .box .role p {
+    animation: secFadeIn 2s forwards;
+    animation-delay: 5.6s;
+    opacity: 0;
+    font-weight: 700;
+    font-family: Helvetica;
+    color: var(--white);
+    font-size:30px;
+    line-height: 1.5;
+     
+    letter-spacing: 3px;
+}
+.sub{
+    color: #f2a900; 
+    font-size: 29px;
+    margin-left: 0;
+}
+
+@keyframes mainBlock {
+    0% {
+        width: 0%;
+        left: 0;
+    }
+    50% {
+        width: 100%;
+        left: 0;
+    }
+    100% {
+        width: 0;
+        left: 100%;
+    }
+}
+@keyframes mainFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: .7;
+    }
+}
+@keyframes secFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* 
+
 .title__index  {
     position: absolute;
     top: 80%;
@@ -93,16 +197,16 @@ body {
     font-size: 45px;
     color: var(--white);
     text-align: center;
-}
+} */
 .subtitle__index{
-    position: absolute;
+    /* position: absolute;
     top: 84%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Helvetica";
     font-size: 30px;
     color: var(--orange2);
-    text-align: center;
+    text-align: center; */
 }
 /* .heroImg{
     position: absolute;
@@ -127,8 +231,8 @@ body {
 
 .button__index {
     position: absolute;
-    top: 90%;
-    left: 50%;
+    top: 85%;
+    left: 75%;
     transform: translate(-50%, -50%);
 }
 
@@ -420,23 +524,72 @@ tbody{color: white}
        height: 100vh;
         
     }
-    .title__index  {
-        position: absolute;
-        top: 82%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "Helvetica";
-        font-size: 20px;
-        color: var(--white);
+    .container .box {
+        width: 250px;
+        height: 300px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
-    .subtitle__index{
+    .container .box .title {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 50px;
+    }
+    .container .box .title .block {
+        width: 0%;
+        height: inherit;
+        background: var(--orange2);
         position: absolute;
-        top: 91%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-family: "Helvetica";
-        font-size: 15px;
+        animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+        animation-delay: 3.5s;
+        display: flex;
+    }
+    .container .box .title h1 {
+        font-family: Arial;
+        color: #fff;
+        font-size: 12px;
+        animation: mainFadeIn 2s forwards;
+        animation-delay: 4.6s;
+        opacity: 0;
+        text-align: center;
+         
+    }
+    .container .box .role {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 30px;
+        margin-top: 50px;
+    }
+    .container .box .role .block {
+        width: 0%;
+        height:80px;
+        background: var(--blue);
+        position: absolute;
+        animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+        animation-delay: 5s;
+        display: flex;
+    }
+    .container .box .role p {
+        animation: secFadeIn 2s forwards;
+        animation-delay: 5.6s;
+        opacity: 0;
+        font-weight: 700;
+        font-family: Helvetica;
         color: var(--white);
+        font-size:12px;
+        line-height: 1.5;
+         
+        letter-spacing: 3px;
+    }
+    .sub{
+        font-size: 8px;
+        
     }
     
     
@@ -509,7 +662,7 @@ tbody{color: white}
     height: 100%;
     background-position: center;
     background-size: cover;
-    background-repeat: none;
+    background-repeat: none !important; 
     transition: flex 2s ease;
     border-style: solid  ;
     border-color: var(--white);
